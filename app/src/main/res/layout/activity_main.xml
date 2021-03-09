@@ -51,5 +51,42 @@
         android:textSize="20sp"
         android:textStyle="bold" />
 
+    <!--
+        Fill - Selected Date
+    -->
+    <TextView
+        android:id="@+id/tvSelectedDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:textColor="#844046"
+        android:textSize="20sp" />
+
+    <!-- SELECT DATE -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selected Date"
+        android:textColor="#B7B7B7"
+        android:textSize="18sp" />
+
+    <!--
+        Fill - Age in Minutes
+    -->
+    <TextView
+        android:id="@+id/tvAgeInMinutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:textColor="#844046"
+        android:textSize="20sp" />
+
+    <!-- SELECT DATE -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age in minutes"
+        android:textColor="#B7B7B7"
+        android:textSize="18sp" />
 
 </LinearLayout>
