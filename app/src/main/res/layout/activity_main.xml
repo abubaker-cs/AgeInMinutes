@@ -36,7 +36,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:text="IN MINUTES"
         android:textColor="@color/textColor"
         android:textSize="25sp"
@@ -44,10 +44,13 @@
 
     <!-- SELECT DATE -->
     <Button
+        android:id="@+id/btnDatePicker"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
+        android:backgroundTint="#FFFFFF"
         android:text="Select Date"
+        android:textColor="#929292"
         android:textSize="20sp"
         android:textStyle="bold" />
 
@@ -67,7 +70,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Selected Date"
-        android:textColor="#B7B7B7"
+        android:textColor="@color/lightGreyTextColor"
         android:textSize="18sp" />
 
     <!--
@@ -86,7 +89,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Age in minutes"
-        android:textColor="#B7B7B7"
+        android:textColor="@color/lightGreyTextColor"
         android:textSize="18sp" />
 
 </LinearLayout>
