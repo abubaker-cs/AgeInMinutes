@@ -23,7 +23,6 @@ class MainActivity : AppCompatActivity() {
         // onClick Event
         btnDatePicker.setOnClickListener { view ->
             clickDatePicker(view)
-            // Toast.makeText(this, "Button works", Toast.LENGTH_LONG).show()
         }
 
 
@@ -39,7 +38,14 @@ class MainActivity : AppCompatActivity() {
 
         DatePickerDialog(
             this,
-            DatePickerDialog.OnDateSetListener { view, year, month, dayOfMonth -> },
+            DatePickerDialog.OnDateSetListener { view, year, month, dayOfMonth ->
+                // Toast.makeText(this, "DatePicker works", Toast.LENGTH_SHORT).show()
+
+                // Main Logic - Convert date in mintues
+
+
+
+            },
             year,
             month,
             day
