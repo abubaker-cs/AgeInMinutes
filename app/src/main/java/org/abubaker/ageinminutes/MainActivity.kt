@@ -79,8 +79,23 @@ class MainActivity : AppCompatActivity() {
 
                 // Calculate Difference
                 val differenceInMinutes = currentDateToMinutes - selectedDateInMinutes
+                val differenceInDays = differenceInMinutes / (60 * 24)
+
+                /**
+                 * After getting the difference of dates in MilliSeconds divide it by below variables
+                 * to get the respective values.
+                 *
+                 * val seconds = 1000
+                 * val minutes = 1000 * 60
+                 * val hours = 1000 * 60 * 60
+                 * val days = 1000 * 60 * 60 * 24
+                 *
+                 * Correct:
+                 * difference / (60 * 24)
+                 */
 
                 binding.tvSelectedDateInMinutes.text = differenceInMinutes.toString()
+                binding.tvSelectedDateInDays.text = differenceInDays.toString()
 
 
             },

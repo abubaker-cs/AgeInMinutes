@@ -94,5 +94,25 @@
             android:textColor="@color/lightGreyTextColor"
             android:textSize="18sp" />
 
+
+        <!--
+            Fill - Age in Days
+        -->
+        <TextView
+            android:id="@+id/tvSelectedDateInDays"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:textColor="#844046"
+            android:textSize="35sp" />
+
+        <!-- SELECT DAYS -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age in days"
+            android:textColor="@color/lightGreyTextColor"
+            android:textSize="18sp" />
+
     </LinearLayout>
 </layout>
