@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
         val month = myCalendar.get(Calendar.MONTH) // Caution: Month starts form index-0
         val day = myCalendar.get(Calendar.DAY_OF_MONTH)
 
-        DatePickerDialog(
+        val dpd = DatePickerDialog(
             this,
             DatePickerDialog.OnDateSetListener { view, selectedYear, selectedMonth, selectedDayOfMonth ->
                 // Toast.makeText(
@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity() {
 
                 // Main Logic - Convert date in mintues
                 val selectedDate = "$selectedDayOfMonth/${selectedMonth + 1}/$selectedYear"
-                binding.tvSelectedDate.setText(selectedDate)
+                binding.tvSelectedDate.text = selectedDate
 
                 /**
                  * SimpleDateFormat() is a concrete class for formatting and parsing dates in a locale-sensitive manner.
@@ -80,15 +80,22 @@ class MainActivity : AppCompatActivity() {
                 // Calculate Difference
                 val differenceInMinutes = currentDateToMinutes - selectedDateInMinutes
 
-                binding.tvSelectedDateInMinutes.setText(differenceInMinutes.toString())
+                binding.tvSelectedDateInMinutes.text = differenceInMinutes.toString()
 
 
             },
             year,
             month,
             day
-        ).show()
-    }
+        )
 
+        /**
+         * We will disable selection of future dates by using datePicker.setMaxDate()
+         */
+
+        // 86400000 = milliseconds of 1 day
+        dpd.datePicker.setMaxDate(Date().time - 86400000)
+        dpd.show()
+    }
 
 }
