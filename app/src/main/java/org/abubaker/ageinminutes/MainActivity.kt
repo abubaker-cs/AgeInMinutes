@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.Toast
 import org.abubaker.ageinminutes.databinding.ActivityMainBinding
+import java.text.SimpleDateFormat
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
@@ -50,7 +51,16 @@ class MainActivity : AppCompatActivity() {
 
                 // Main Logic - Convert date in mintues
                 val selectedDate = "$selectedDayOfMonth/${selectedMonth + 1}/$selectedYear"
+                binding.tvSelectedDate.setText(selectedDate)
 
+                /**
+                 * SimpleDateFormat() is a concrete class for formatting and parsing dates in a locale-sensitive manner.
+                 * It allows for formatting (date → text), parsing (text → date), and normalization.
+                 * URL: https://developer.android.com/reference/java/text/SimpleDateFormat
+                 */
+                val sdf = SimpleDateFormat("dd/MM/yyyy", Locale.ENGLISH)
+
+                val theDate = sdf.parse(selectedDate)
 
 
             },
