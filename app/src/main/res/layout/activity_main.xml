@@ -1,95 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/backgroundColor"
-    android:gravity="center_horizontal"
-    android:orientation="vertical"
-    android:padding="16dp"
-    tools:context=".MainActivity">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- CALCULATE YOUR -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="CALCULATE YOUR"
-        android:textColor="@color/textColor"
-        android:textSize="25sp"
-        android:textStyle="bold" />
-
-    <!-- AGE -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:background="@color/ageTextBackgroundColor"
-        android:padding="10dp"
-        android:text="AGE"
-        android:textColor="@color/ageTextColor"
-        android:textSize="25sp"
-        android:textStyle="bold" />
-
-    <!-- IN MINUTES -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="IN MINUTES"
-        android:textColor="@color/textColor"
-        android:textSize="25sp"
-        android:textStyle="bold" />
-
-    <!-- SELECT DATE -->
-    <Button
-        android:id="@+id/btnDatePicker"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:backgroundTint="#FFFFFF"
-        android:text="Select Date"
-        android:textColor="#929292"
-        android:textSize="20sp"
-        android:textStyle="bold" />
+        android:layout_height="match_parent"
+        android:background="@color/backgroundColor"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".MainActivity">
 
-    <!--
-        Fill - Selected Date
-    -->
-    <TextView
-        android:id="@+id/tvSelectedDate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20sp"
-        android:textColor="#844046"
-        android:textSize="20sp" />
+        <!-- CALCULATE YOUR -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="CALCULATE YOUR"
+            android:textColor="@color/textColor"
+            android:textSize="25sp"
+            android:textStyle="bold" />
 
-    <!-- SELECT DATE -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Selected Date"
-        android:textColor="@color/lightGreyTextColor"
-        android:textSize="18sp" />
+        <!-- AGE -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@color/ageTextBackgroundColor"
+            android:padding="10dp"
+            android:text="AGE"
+            android:textColor="@color/ageTextColor"
+            android:textSize="25sp"
+            android:textStyle="bold" />
 
-    <!--
-        Fill - Age in Minutes
-    -->
-    <TextView
-        android:id="@+id/tvSelectedDateInMinutes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20sp"
-        android:textColor="#844046"
-        android:textSize="35sp" />
+        <!-- IN MINUTES -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="IN MINUTES"
+            android:textColor="@color/textColor"
+            android:textSize="25sp"
+            android:textStyle="bold" />
 
-    <!-- SELECT DATE -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Age in minutes"
-        android:textColor="@color/lightGreyTextColor"
-        android:textSize="18sp" />
+        <!-- SELECT DATE -->
+        <Button
+            android:id="@+id/btnDatePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="Select Date"
+            android:textColor="#929292"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
-</LinearLayout>
+        <!--
+            Fill - Selected Date
+        -->
+        <TextView
+            android:id="@+id/tvSelectedDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:textColor="#844046"
+            android:textSize="20sp" />
+
+        <!-- SELECT DATE -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selected Date"
+            android:textColor="@color/lightGreyTextColor"
+            android:textSize="18sp" />
+
+        <!--
+            Fill - Age in Minutes
+        -->
+        <TextView
+            android:id="@+id/tvSelectedDateInMinutes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:textColor="#844046"
+            android:textSize="35sp" />
+
+        <!-- SELECT DATE -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age in minutes"
+            android:textColor="@color/lightGreyTextColor"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</layout>

@@ -6,10 +6,13 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.Toast
+import org.abubaker.ageinminutes.databinding.ActivityMainBinding
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
+    // Binding Object
+    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,7 +28,6 @@ class MainActivity : AppCompatActivity() {
             clickDatePicker(view)
         }
 
-
     }
 
     // DatePicker
@@ -33,15 +35,21 @@ class MainActivity : AppCompatActivity() {
 
         val myCalendar = Calendar.getInstance()
         val year = myCalendar.get(Calendar.YEAR)
-        val month = myCalendar.get(Calendar.MONTH)
+        val month = myCalendar.get(Calendar.MONTH) // Caution: Month starts form index-0
         val day = myCalendar.get(Calendar.DAY_OF_MONTH)
 
         DatePickerDialog(
             this,
-            DatePickerDialog.OnDateSetListener { view, year, month, dayOfMonth ->
-                // Toast.makeText(this, "DatePicker works", Toast.LENGTH_SHORT).show()
+            DatePickerDialog.OnDateSetListener { view, selectedYear, selectedMonth, selectedDayOfMonth ->
+                Toast.makeText(
+                    this,
+                    "The chosen year is $selectedYear, the month is $selectedMonth and the day is $selectedDayOfMonth",
+                    Toast.LENGTH_LONG
+
+                ).show()
 
                 // Main Logic - Convert date in mintues
+                val selectedDate = "$selectedDayOfMonth/${selectedMonth + 1}/$selectedYear"
 
 
 
