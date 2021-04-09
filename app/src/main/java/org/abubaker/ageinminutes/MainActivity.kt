@@ -1,11 +1,10 @@
 package org.abubaker.ageinminutes
 
 import android.app.DatePickerDialog
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
-import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import org.abubaker.ageinminutes.databinding.ActivityMainBinding
 import java.text.SimpleDateFormat
